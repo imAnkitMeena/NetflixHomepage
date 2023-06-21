@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Netflix</title>  
+    <link rel="stylesheet" href="netstyle.css">
+    <style>
+.qna{
+  max-width: 500px;
+  margin: 0 auto;
+  width: 50%;
+}
+
+button{
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.accordion{
+  width: 100%;
+  background-color: #303030;
+  color: #fff;
+  font-size: 20px;
+  padding: 18px 20px;
+  margin-bottom: 1px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion::after{
+  content: '\02795';
+  font-size: 20px;
+  color: #fff;
+}
+
+.panel{
+  background-color: #303030;
+  color: #fff;
+  margin-bottom: 4px;
+  overflow: hidden;
+}
+.panel > p {
+  font-size: 20px;
+  padding: 10px 20px;
+}
+.panel-closed{
+  max-height: 0;
+  overflow: hidden;
+}
+.panel-open{
+  max-height: 700px;
+}
+.accordion-active::after {
+  content: "\274C";
+}
+.panel{
+  transition: max-height .33s cubic-bezier(.5,0,.1,1);
+}
+    </style>
+    </head>
+<body>
+<div class="navbar">
+  <li class="logo"><img src="images/logo.png "></li>
+  <li class="buttons">Sign In</li>
+</div>
+<div class="main">
+<div class="area">
+  <h1>Unlimited movies, TV shows, and more.</h1>
+  <h3>Watch anywhere. Cancel anytime.
+    <p>Ready to watch? Enter your email to create or access your account</p></h3>
+<div class="search">
+      <input type="email" class="box"placeholder="Email address">
+  <span class="try">
+    Get Started >
+      </span>
+</div>
+</div> 
+</div>
+<div class="container1">
+<div class="text">
+     <h1>Enjoy on your TV. </h1>
+     <p> Watchx on Smart TVs, Playstation, Xbox, <br>
+         Chromecast, Apple TV, Blu-ray players, and<br>
+         more.</p>
+</div>
+<div class="image">
+     <img src="i.png">
+</div>
+</div>
+<div class="container1">
+  <div class="text">
+    <h1>Download your shows to watch on the go.</h1>
+    <p>Save your data and watch all your favorites offline.</p>
+</div>
+<div class="image">
+    <img src="ii.png">
+</div>            
+</div>
+<div class="container1">
+<div class="text">
+    <h1>Watch everywhere.</h1>
+     <p> Stream unlimited movies and TV shows on <br>your phone, tablet, laptop, and TV without paying more.</p>
+</div>
+<div class="image">
+      <img src="im.png">
+</div>
+ </div>
+  <div class="question">
+    <h1>Frequently Asked Questions
+      </h1>
+      <div class="qna">
+        <button class="accordion">What is Netflix?</button>
+        <div class="panel panel-closed">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, nemo. </p>
+        </div>
+        <button class="accordion">How much does Netflix cost?</button>
+        <div class="panel panel-closed">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, nemo. </p>
+        </div>
+        <button class="accordion">Where can I watch?</button>
+        <div class="panel panel-closed">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, nemo. </p>
+        </div>
+        <button class="accordion">What can I watch on Netflix?</button>
+        <div class="panel panel-closed">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, nemo.</p>
+        </div>
+      </div>                                    
+              <div class="search1">
+                  <input type="email" class="box1" placeholder="Email" >
+                  <span class="try1">
+            Get Started           
+                  </span>                          
+            </div>      
+            <h4>Ready to watch? Enter your email to create or access your account
+              </h4>
+            </div>  
+            <footer>
+              <p>&copy 1997-2018 Netflix, Inc.</p>
+              <p>Carlos Avila &copy 2018</p>
+            </footer>
+          </div>                                       
+</body>
+</html> 
